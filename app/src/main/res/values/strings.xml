@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ABN_scoreKeeper</string>
+
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="p3">Player 3</string>
+    <string name="p4">Player 4</string>
+    <string name="p5">Player 5</string>
+    <string name="p6">Player 6</string>
+    <string name="p7">Player 7</string>
+    <string name="p8">Player 8</string>
+    <string name="p9">Player 9</string>
+    <string name="p10">Player 10</string>
+    <string name="p11">Player 11</string>
+
+    <string name="card_red">Red</string>
+    <string name="card_yellow">Yellow</string>
+
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="initial_score">0</string>
+
+    <string name="txt_score">Score</string>
+
+
+    <string name="announcements">Last results</string>
+    <string name="btn_score">Goal</string>
+    <string name="list_of_players">List of players</string>
+    <string name="btn_reset">Reset</string>
+</resources>

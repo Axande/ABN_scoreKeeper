@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrei.abn_scorekeeper.MainActivity">
+
+    <!--First element of the scroll view-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/announcements"
+            android:gravity="center"
+            android:textSize="@dimen/large"
+            android:layout_marginTop="@dimen/_8dp"/>
+
+        <TextView
+            android:id="@+id/events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empty"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_16dp"/>
+
+        <!--Teams details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--First team-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teamA"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/medium"/>
+
+                <!--Team A score-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_score"
+                        android:textSize="@dimen/large"/>
+
+                    <TextView
+                        android:id="@+id/teamA_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:text="@string/initial_score"
+                        android:textSize="@dimen/large" />
+
+                </LinearLayout>
+                <!--End team A score-->
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_score"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:onClick="teamA_score"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/list_of_players"
+                    android:textSize="@dimen/medium"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_8dp"/>
+
+
+                <!--Players team A scroll group-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_scroll_players">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/teamA_p1"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p1" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p2"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p2" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p3"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p3" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p4"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p4" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p5"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p5" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p6"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p6" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p7"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p7" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p8"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p8" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p9"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p9" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p10"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p10" />
+
+                        <RadioButton
+                            android:id="@+id/teamA_p11"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p11" />
+
+                    </RadioGroup>
+                </ScrollView>
+                <!--End players team A scroll group-->
+
+                <!--Yellow-Red cards group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/card_yellow"
+                        android:layout_marginStart="@dimen/_8dp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/card_red"
+                        android:layout_marginEnd="@dimen/_8dp"/>
+                </LinearLayout>
+                <!--End yellow-Red cards-->
+
+
+            </LinearLayout>
+            <!--End of first team-->
+
+
+            <!--Second team-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teamB"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/medium"/>
+
+                <!--Team B score-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_score"
+                        android:textSize="@dimen/large"/>
+
+                    <TextView
+                        android:id="@+id/teamB_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/initial_score"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:textSize="@dimen/large"/>
+
+                </LinearLayout>
+                <!--End team A score-->
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_score"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:onClick="teamB_score"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/list_of_players"
+                    android:textSize="@dimen/medium"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_8dp"/>
+
+
+                <!--Players team A scroll group-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_scroll_players">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/teamB_p1"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p1" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p2"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p2" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p3"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p3" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p4"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p4" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p5"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p5" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p6"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p6" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p7"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p7" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p8"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p8" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p9"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p9" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p10"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p10" />
+
+                        <RadioButton
+                            android:id="@+id/teamB_p11"
+                            style="@style/playerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p11" />
+
+                    </RadioGroup>
+                </ScrollView>
+                <!--End players team A scroll group-->
+
+                <!--Yellow-Red cards group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/card_yellow"
+                        android:layout_marginStart="@dimen/_8dp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/card_red"
+                        android:layout_marginEnd="@dimen/_8dp"/>
+                </LinearLayout>
+                <!--End yellow-Red cards-->
+
+
+            </LinearLayout>
+            <!--End of second team-->
+
+        </LinearLayout>
+        <!--End of teams details-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reset"
+            android:layout_marginStart="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"/>
+
+    </LinearLayout>
+    <!--End of first element of the scroll view-->
+
+</ScrollView>
