@@ -21,6 +21,7 @@
     <string name="initial_score">0</string>
 
     <string name="txt_score">Score</string>
+    <string name="initial_events">-Log of events-</string>
 
 
     <string name="announcements">Last results</string>

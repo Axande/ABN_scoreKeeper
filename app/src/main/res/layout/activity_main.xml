@@ -18,13 +18,14 @@
             android:text="@string/announcements"
             android:gravity="center"
             android:textSize="@dimen/large"
+            android:textColor="@color/colorAccent"
             android:layout_marginTop="@dimen/_8dp"/>
 
         <TextView
             android:id="@+id/events"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Empty"
+            android:text="@string/initial_events"
             android:gravity="center"
             android:layout_marginBottom="@dimen/_16dp"/>
 
@@ -44,9 +45,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/teamA"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/medium"/>
+                    android:text="@string/teamA"
+                    android:textSize="@dimen/medium"
+                    android:textColor="@color/colorAccent" />
 
                 <!--Team A score-->
                 <LinearLayout
@@ -79,7 +81,7 @@
                     android:text="@string/btn_score"
                     android:layout_marginStart="@dimen/_8dp"
                     android:layout_marginEnd="@dimen/_8dp"
-                    android:onClick="teamA_score"/>
+                    android:onClick="teamAscore"/>
 
 
                 <TextView
@@ -89,16 +91,13 @@
                     android:text="@string/list_of_players"
                     android:textSize="@dimen/medium"
                     android:layout_marginTop="@dimen/_16dp"
-                    android:layout_marginBottom="@dimen/_8dp"/>
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:textColor="@color/colorAccent"/>
 
 
                 <!--Players team A scroll group-->
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/size_scroll_players">
-
-
                     <RadioGroup
+                        android:id="@+id/players_teamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -180,7 +179,6 @@
                             android:text="@string/p11" />
 
                     </RadioGroup>
-                </ScrollView>
                 <!--End players team A scroll group-->
 
                 <!--Yellow-Red cards group-->
@@ -194,14 +192,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/card_yellow"
-                        android:layout_marginStart="@dimen/_8dp"/>
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:onClick="yellowTeamA"/>
 
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/card_red"
-                        android:layout_marginEnd="@dimen/_8dp"/>
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:onClick="redTeamA"/>
                 </LinearLayout>
                 <!--End yellow-Red cards-->
 
@@ -222,7 +222,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/teamB"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/medium"/>
+                    android:textSize="@dimen/medium"
+                    android:textColor="@color/colorAccent"/>
 
                 <!--Team B score-->
                 <LinearLayout
@@ -255,7 +256,7 @@
                     android:text="@string/btn_score"
                     android:layout_marginStart="@dimen/_8dp"
                     android:layout_marginEnd="@dimen/_8dp"
-                    android:onClick="teamB_score"/>
+                    android:onClick="teamBscore"/>
 
 
                 <TextView
@@ -265,16 +266,13 @@
                     android:text="@string/list_of_players"
                     android:textSize="@dimen/medium"
                     android:layout_marginTop="@dimen/_16dp"
-                    android:layout_marginBottom="@dimen/_8dp"/>
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:textColor="@color/colorAccent"/>
 
 
                 <!--Players team A scroll group-->
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/size_scroll_players">
-
-
                     <RadioGroup
+                        android:id="@+id/players_teamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -356,7 +354,6 @@
                             android:text="@string/p11" />
 
                     </RadioGroup>
-                </ScrollView>
                 <!--End players team A scroll group-->
 
                 <!--Yellow-Red cards group-->
@@ -370,14 +367,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/card_yellow"
-                        android:layout_marginStart="@dimen/_8dp"/>
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:onClick="yellowTeamB"/>
 
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/card_red"
-                        android:layout_marginEnd="@dimen/_8dp"/>
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:onClick="redTeamB"/>
                 </LinearLayout>
                 <!--End yellow-Red cards-->
 
@@ -395,7 +394,8 @@
             android:layout_marginStart="@dimen/_8dp"
             android:layout_marginEnd="@dimen/_8dp"
             android:layout_marginTop="@dimen/_16dp"
-            android:layout_marginBottom="@dimen/_16dp"/>
+            android:layout_marginBottom="@dimen/_16dp"
+            android:onClick="resetAll"/>
 
     </LinearLayout>
     <!--End of first element of the scroll view-->
